@@ -1,0 +1,10 @@
+pragma solidity ^0.8.0;
+contract StoreIPFSHash{
+        string[] public ipfsHashes;
+	function storeHash(string memory hash) public{     infinite gas
+		ipfsHashes.push(hash);
+	}
+	function getHash(unit index) public view returns(string memory){    infinite gas
+		return ipfsHashes[index];
+	}
+}
